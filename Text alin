@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>text aigments </title>
+    <style> 
+    h1{
+        text-align: center
+       
+    } 
+    h2{
+        text-decoration-line : overline underline
+        
+    }
+    p{
+        text-align: right;
+
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>
+        Text-Aligment
+    </h1>
+    <h2>
+        Text-Aligment
+    </h2>
+    <P>
+        A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
+    </P>
+</body>
+</html>
