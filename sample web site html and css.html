@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=0">
+    
+    <title>Super Market Store</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+                    }
+            header{
+                height: 45px;
+            }        
+            header nav ul{
+                display: flex ;
+                margin-left: 60%;
+                background-color: aquamarine;
+                        }
+header nav li{
+    padding: 10%;
+
+
+}
+section{
+    height: 40vh;
+    border: 2px solid  blue;
+    display: flex;
+    justify-content:center;
+    align-items:center
+}
+
+.container h1{
+    margin-top: 10px;
+    height: 100px
+
+}
+
+.container h2{
+    margin-top: 4%;
+}
+footer{
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+}
+</style>
+</head>
+<body>
+    <h1>Grocery Store</h1>
+    <header>
+       <nav>
+        <ul>
+            <li><a href="#Intro">intro</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+       </nav>
+    </header>
+    <main>
+        <section id="Intro">
+<div class="container">
+  <img  src="data:image/jpeg;base64,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" alt="super  market " height="150"/>
+<h2>Grocery Store</h2>
+</div>
+</section>
+        <section id="About us">
+<div class="container"></div>
+<h1>  About Us</h1>
+   <p >A grocery store (AE), grocery shop (BE) or simply grocery[1] is a foodservice retail store that primarily retails a general range of food products,[2] which may be fresh or packaged. In everyday U.S. usage, however, "grocery store" is a synonym for supermarket,[3] and is not used to refer to other types of stores that sell groceries. In the UK, shops that sell food are distinguished as grocers[3] or grocery shops.
+   </p>
+   <br>
+   <ul>
+    <li>vegetables</li>
+    <li>fruits</li>
+    <li>Grocery</li>
+    <li>milk items</li>
+   </ul>
+</div>
+        </section>
+        <section id="contact">
+<div class="container">
+    <h1>
+        contact us : 004876547
+    </h1>
+    <p> visit again</p>
+</div>
+        </section>
+    </main>
+    <footer>
+<p> &copy;copyrigths  20021  grocery store</p>
+    </footer>
+</body>
+</html>
