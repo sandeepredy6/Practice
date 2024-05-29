@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Navigation bar</title>
+    <style>
+        ul{
+            list-style-type:none;
+         margin: o;
+         padding: 0;
+        }
+        li a {
+            display: block;
+            background-color: aqua;
+            text-decoration: none;
+            width: 60px;
+            color:red;
+            padding: 15px 20px;
+
+        }
+        li a.active{
+            background-color: black;
+            color: white;
+        }
+        li  a:hover:not(.active){
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Navigation bar</h1>
+    <ul> 
+        <li><a class="active"  href="#Home"> Home</a></li>
+        <li><a href="#About"> About</a></li>
+        <li><a href="#sigin"> sign</a></li>
+    </ul>
+</body>
+</html>
