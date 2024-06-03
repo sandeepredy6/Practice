@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #00050d;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        #header {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        #second-div {
+            display: flex;
+            gap: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+            cursor: pointer;
+        }
+
+        li {
+            font-size: 20px;
+            color: gray;
+            margin-top: 10px;
+            list-style-type: none;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #fff;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown2:hover .dropbtn2 {
+            color: #fff;
+        }
+
+        .dropdown-content2 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content2 p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content2 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+
+        .dropdown3:hover .dropbtn3 {
+            color: #fff;
+        }
+
+        .dropdown-content3 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content3 p,
+        h3 {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content3 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown3:hover .dropdown-content3 {
+            display: block;
+        }
+
+        .dropdown4:hover .dropbtn4 {
+            color: #fff;
+        }
+
+        .dropdown-content4 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content4 p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content4 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown4:hover .dropdown-content4 {
+            display: block;
+        }
+
+        #icon {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        #icon2 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
+
+        .dropdown5:hover .dropbtn5 {
+            color: #fff;
+        }
+
+        .dropdown-content5 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content5 p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content5 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown5:hover .dropdown-content5 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div>
+            <h1>prime video</h1>
+        </div>
+        <div>
+            <ul>
+                <div class="dropdown">
+                    <li class="dropbtn">Home <i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content">
+                        <p>All</p>
+                        <p>Movies</p>
+                        <p>TV shows</p>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <li class="dropbtn2">Store <i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content2">
+                        <p>All</p>
+                        <p>Rent</p>
+                        <p>Channels</p>
+                    </div>
+                </div>
+                <li>LiveTV</li>
+                <div class="dropdown3">
+                    <li class="dropbtn3">Categories <i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content3">
+                        <h3>Genres</h3>
+                        <p>Action and adventure</p>
+                        <p>Anime</p>
+                        <p>Comedy</p>
+                        <p>Documentary</p>
+                        <p>Drama</p>
+                        <p>Fantasy</p>
+                        <p>Horror</p>
+                        <p>Kids</p>
+                        <p>Mystery and thrillers</p>
+                        <p>Romance</p>
+                        <p>Science fiction</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div id="second-div">
+            <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+            <h2>Try for free</h2>
+            <div class="dropdown4">
+                <li class="dropbtn4">EN <i class="fa-solid fa-caret-down"></i></li>
+                <div class="dropdown-content4">
+                    <p>English</p>
+                    <p>Telugu</p>
+                    <p>Dansk</p>
+                    <p>Deutsch</p>
+                    <p>Hindi</p>
+                    <p>Español</p>
+                    <p>Français</p>
+                    <p>Italiano</p>
+                    <p>Mystery and thrillers</p>
+                    <p>Romance</p>
+                    <p>Science fiction</p>
+                </div>
+            </div>
+            <div class="dropdown5">
+                <i id="icon" class="fa-solid fa-user"></i>
+                <div class="dropdown-content5">
+                    <p>Sign in</p>
+                    <p>Help</p>
+                    <p>Watch Anywhere</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bb23ea113c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
