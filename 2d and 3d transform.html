@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title>2D transforms </title>
+
+<style>
+
+div{
+
+background-color: rgb(14, 119, 218);
+
+width: 100px;
+
+height: 100px;
+
+}
+
+#translate{
+
+transform:translate(69px, 45px);
+background-color: #7bda0e;
+}
+
+#rotate{
+   
+transform: rotate(60deg);
+background-color: black;
+}
+
+#scale{
+background-color: #0c9164;
+transform: scale(2, 1);
+
+}
+
+#skew{
+
+transform: skew(30deg, 45deg);
+
+}
+
+#matrix{
+background-color:hsl(36, 80%, 51%);
+transform: matrix(2, 0, 0, 2, 60, 80 )
+
+}
+
+#rotateX{
+
+transform: rotateX(190deg);
+background-color: aqua;
+}
+
+#rotateY{
+
+transform: rotateY(145deg);
+
+}
+
+#rotateZ{
+
+transform: rotateZ(145deg);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1> 2D transforms </h1>
+
+<div>
+
+</div>
+
+<h2> translate(): moving of elements from original position </h2>
+
+<div id="translate">
+
+</div>
+
+<br>
+
+<br>
+
+<h2> rotate </h2>
+
+<div id="rotate">
+
+</div>
+
+<h2> Scale </h2>
+
+<div id="scale">
+
+</div>
+
+<h2> skew </h2>
+
+<div id="skew">
+
+</div>
+
+<br>
+
+<br>
+
+<br>
+
+<h2> matrix </h2>
+
+<div id="matrix">
+
+scaleX, skewY, skewX, scaleY, translateX(), translateY()
+
+</div>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<h1> 3D transforms </h1>
+
+<p> rotateX, rotateY, rotateZ </p>
+
+<div id="rotateX"> div is rotating along x axis</div>
+
+<br>
+
+<br>
+
+<br>
+
+<h2> rotateY </h2>
+
+<div id="rotateY"> div is rotating along Y axis </div>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<h2> rotateZ </h2>
+
+<div id="rotateZ"> div is rotating along Z axis </div>
+
+</body>
+
+</html> 
