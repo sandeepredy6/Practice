@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLA BIKE WEB</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #header {
+            text-align:left;
+            background-color: white;
+            color:black;
+      
+        }
+        
+      .header_top_content .button {
+       
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            z-index: 3;
+            border: 0;
+            background: #fff;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            pointer-events: auto;
+            touch-action: manipulation;
+            
+            float: right;
+            margin: 0;
+            padding: 0 12px;
+            border-radius: 60px;
+            align-content: center;
+            flex-direction: row;
+          
+        }
+        .first-div {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+               body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+       
+        h1 {
+            font-size: 26px;
+            display: block;
+            margin-bottom: 5px;
+            color: #dfe9e8;
+            font-weight: 800;
+            padding-top: 60px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+       
+
+        .box {
+            background: #047c6cb7;
+            padding: 30px 40px;
+            margin-bottom: 0;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #252323;
+        }
+
+        .box:hover {
+            background-color: #50a78a;
+            color: #111010;
+        }
+
+         .highlight-box {
+            background: #8d8c8c;
+            padding: 30px 40px;
+            margin-bottom: 0;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+          
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 4px;
+            font-family: "Roboto", Arial, sans-serif;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            background: #0d2736;
+            padding: 5px;
+            border-radius: 30px;
+            color: #0f0f0f;
+            cursor: pointer;
+            align-items: right;
+        }
+        footer{
+            text-align: center;
+            text-decoration: underline;
+         
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="data:image/png;base64,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"> 
+              <h1>electric</h1>
+    </div>
+</div>
+<div class="header_top_content" >
+            <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </div>
+    </div>
+
+    </div>
+    <div class="first-div">
+        <div class="box">
+        <div class="Ola Bike">
+            <img src="/ola bike.jpg" height="200px" width="200px"
+                height="80px">
+            <h3>Ola bike</h3>
+            <span>S1</span>
+        </div>
+        </div>
+        <div class="box">
+            <img src="/s1pro.jpg" width="200px"
+                height="200px">
+            <h3>Ola second editon</h3>
+            <span>S1 Pro</span>
+        </div>
+       
+     
+    </div>
+    <footer>
+       <p> customer support:040-6783459 <br> Email-id:olabikesupport.in<br>
+
+       loaction:India</p>
+</footer>
+</body>
+
+</html>
