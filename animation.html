@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title> Animations </title>
+
+<style>
+
+div{
+
+width: 100px;
+
+height: 100px;
+
+background-color: rgb(0, 26, 255);
+
+animation-name: siva;
+
+animation-duration: 5s;
+
+animation-fill-mode: forwards;
+
+animation-iteration-count: 5;
+
+position: relative;
+
+}
+
+@keyframes siva{
+
+from{left: 0px;}
+
+to{left: 300px;}
+
+}
+
+#linear{
+
+animation-timing-function: linear;
+background-color: rgb(177, 29, 29);
+}
+
+#ease{
+
+animation-timing-function: ease;
+background-color: aqua;
+
+}
+
+#easein{
+background-color: rgb(139, 95, 37);
+animation-timing-function: ease-in;
+
+}
+
+#easeout{
+background-color: blueviolet;
+animation-timing-function: ease-out;
+
+}
+
+#ease3{
+background-color: bisque;
+animation-timing-function: ease-in-out;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1> Animations </h1>
+
+<div>
+
+</div>
+
+<h2> transiton-timing-function </h2>
+
+<h3> linear property: same speed from start to end</h3>
+
+<div id="linear"> linear </div>
+
+<h3> ease property: slow start, then fast, end slowly</h3>
+
+<div id="ease"> ease </div>
+
+<h3> ease-in property: with a slow start</h3>
+
+<div id="easein"> ease-in </div>
+
+<h3> ease-out property: slow end </h3>
+
+<div id="easeout"> ease-out </div>
+
+<h3> ease-in-out property: slow start and end </h3>
+
+<div id="ease3"> ease-in-out </div>
+
+</body>
+
+</html> 
