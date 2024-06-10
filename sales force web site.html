@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            color: #131212;
+            font-size: 20px;
+        }
+
+        #header {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        #second-div {
+            display: flex;
+            gap: 40px;
+        }
+         ul {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+            cursor: pointer;
+        }
+
+        li {
+            font-size: 20px;
+            color: gray;
+            margin-top: 10px;
+            list-style-type: none;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #fff;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown2:hover .dropbtn2 {
+            color: #fff;
+        }
+
+        .dropdown-content2 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content2 p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content2 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+
+        .dropdown3:hover .dropbtn3 {
+            color: #fff;
+        }
+
+        .dropdown-content3 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content3 p,
+        h3 {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content3 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown3:hover .dropdown-content3 {
+            display: block;
+        }
+
+        
+
+        #icon {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        #icon2 {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
+
+        .dropdown5:hover .dropbtn5 {
+            color: #fff;
+        }
+
+        .dropdown-content5 {
+            display: none;
+            background-color: #302f2f;
+        }
+
+        .dropdown-content5 p {
+            color: #fff;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content5 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown5:hover .dropdown-content5 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div>
+            <img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" height="50px">
+
+        </div>
+        <div>
+            <ul>
+                <div class="dropdown">
+                    <li class="dropbtn">products<i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content">
+                        <p>sales</p>
+                        <p>customer 360</p>
+                        <p>services</p>
+                    </div>
+                </div>
+                <div class="dropdown2">
+                    <li class="dropbtn2">Industry <i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content2">
+                        <p>consumer goods</p>
+                        <p>communication</p>
+                        <p>Education</p>
+                    </div>
+                </div>
+                 <div class="dropdown3">
+                    <li class="dropbtn3">learning<i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content3">
+                        <p>Learing topic</p>
+                        <p>By role</p>
+                        <p>Blog</p>
+                        
+                    </div>
+                </div>
+           
+        </div>
+            </div>
+            <div id="second-div">
+                <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+            <div class="dropdown5">
+                <i id="icon" class="fa-solid fa-user"></i>
+                <div class="dropdown-content5">
+                    <p>Sign in</p>
+                    <p>Help</p>
+                    <p>Watch Anywhere</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bb23ea113c.js" crossorigin="anonymous"></script>
+
+</ul>
+</div>
+</div>
+</body>
+
+</html>
+    </style>
+</head>
+</body>
+
+</html>
