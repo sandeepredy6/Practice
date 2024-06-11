@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <meta charset="UTF-8" />
+
+ <title> Gradient </title>
+
+ <style>
+
+.div{
+
+ width: 200px;
+
+ height: 200px;
+
+ background-color: red;
+
+ }
+
+#linear{
+
+background: repeating-linear-gradient(to bottom right, pink, skyblue 10%, yellow 20%);
+
+}
+
+#radial{
+
+ background-image:repeating-radial-gradient(green 5%, blue 20%, brown 40%);
+
+ }
+
+ #conic{
+
+ background-image: conic-gradient(pink 45deg, skyblue 90deg, green 210deg);
+
+ border-radius: 50%;
+
+ }
+
+</style>
+
+</head>
+
+ <body>
+    <div>
+ <h1> Gradient </h1>
+
+ 
+</div>
+ <h3> Linear gradient </h3>
+
+ <div id="linear">
+
+linear
+
+</div>
+
+ <h4> Radial Gradient </h4>
+
+ <div id="radial">
+
+ Radial
+
+ </div>
+
+ <h3> conic gradient </h3>
+
+ <div id="conic">
+
+ conic
+
+ </div>
+</div>
+ </body>
+ </html>
