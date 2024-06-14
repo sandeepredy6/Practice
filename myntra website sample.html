@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:white;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        #header {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        #second-div {
+            display: flex;
+            gap: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+            cursor: pointer;
+        }
+
+        li {
+            font-size: 20px;
+            color: gray;
+            margin-top: 10px;
+            list-style-type: none;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #0e0c0c;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: white;
+        }
+        .dropbtn1{
+            color:#f10b50;
+        }
+       
+        .dropdown-content p {
+            color: black;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content p:hover {
+            background-color: #ddd;
+            color:black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown2:hover .dropbtn2 {
+            color:white;
+        }
+
+        .dropdown-content2 {
+            display: none;
+            background-color: white;
+        }
+
+        .dropdown-content2 p {
+            color: #070707;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content2 p:hover {
+            background-color: #0f0f0f;
+            color: #ddd2d2;
+        }
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+
+        .dropdown3:hover .dropbtn3 {
+            color:rgb(14, 13, 13);
+        }
+        .dropbtn3{
+            color:#e6620b;
+        }
+        
+    
+        .dropbtn3{
+            color:#fd5305;
+        }
+        .dropdown4:hover .dropbtn4 {
+            color: #fff;
+        }
+
+        .dropdown-content4 {
+            display: none;
+            background-color: white;
+        }
+
+        .dropdown-content4 p {
+            color: black;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content4 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown4:hover .dropdown-content4 {
+            display: block;
+        }
+        .dropdown4:hover .dropbtn4 {
+            color: #fff;
+        }
+
+        .dropdown-content4 {
+            display: none;
+            background-color: white;
+        }
+
+        .dropdown-content5 p {
+            color: black;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content5 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown5:hover .dropdown-content5 {
+            display: block;
+        }
+
+        #icon {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        #icon2 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
+
+        .dropdown5:hover .dropbtn5 {
+            color: #fff;
+        }
+
+        .dropdown-content5 {
+            display: none;
+            background-color: #8d8888;
+        }
+
+        .dropdown-content5 p {
+            color: #080808;
+            padding: 8px 12px;
+        }
+
+        .dropdown-content5 p:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown5:hover .dropdown-content5 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div>
+            <img src="data:image/png;base64,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" height="50px" width="100px" >
+        </div>
+        <div>
+            <ul>
+                <div class="dropdown">
+                    <li class="dropbtn">Man <i class="fa-solid fa-caret-down"></i></li>
+                    
+                    <div class="dropdown-content"><li class="dropbtn1">Topware
+                        <p>Casual Shirts</p>
+                        <p>Formal Shirts</p>
+                        <p>Sweatshirts</p>
+                        <p>Sweaters</p>
+                        <p>Jackets</p>
+                        <p>Blazers & Coats</p>
+                       <p>T-Shirts</p> 
+                       <p>Suits
+                        Rain Jackets</p>
+                   </div>
+                </div>
+               
+                <div class="dropdown2">
+                    <li class="dropbtn2">Woman <i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content2"><li class="dropbtn1">Indian & Fusion Wear
+                        <p>Kurtis, Tunics & Tops</p>
+                        <p>Sarees</p>
+                        <p>Ethnic Wear</p>
+                        <p>Leggings, Salwars & Churidars</p>
+                        <p>Skirts & Palazzos</p>
+                        <p>Dress Materials</p>
+                        <p>Lehenga Cholis</p>
+                        <p>Dupattas & Shawls</p>
+                        <p>Jackets</p>
+                    </div>
+                </div>
+                    <div class="dropdown4">
+                    <li class="dropbtn2">Kids <i class="fa-solid fa-caret-down"></i></li>
+                    <div class="dropdown-content4"><li class="dropbtn3">Boys Clothing
+                        <p> T-Shirts</p>
+                        <p>Trousers</p>
+                        <p>Shorts</p>
+                        <p>Clothing Sets</p>
+                        <p>Ethnic Wear</p>
+                        <p>Track Pants & Pyjamas</p>
+                        <p>Jacket, Sweater & Sweatshirts</p>
+                        <p>Jeans</p>
+                        <p>Party Wear</p>
+                     </div>
+                    </div>
+                     <div class="dropdown4">
+                        <li class="dropbtn2">Home & Living<i class="fa-solid fa-caret-down"></i></li>
+                        <div class="dropdown-content4"><li class="dropbtn4">Bed Linen & Furnishing
+                            <p>Bed Runners</p>
+                             <p>Mattress Protectors</p>
+                             <p>Bedsheets</p>
+                             <p> Bedding Sets</p>
+                             <p>Blankets, Quilts & Dohars</p>
+                             <p>Pillows & Pillow Covers</p>
+                             <p>   Bed Covers</p>
+                             <p>   Diwan Sets</p>
+                         </div>    
+
+            </ul>
+        </div>
+        <div id="second-div">
+            <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+            <h2>Try for free</h2>
+            <div class="dropdown4">
+                <li class="dropbtn4">EN <i class="fa-solid fa-caret-down"></i></li>
+                <div class="dropdown-content4">
+                    <p>English</p>
+                    <p>Telugu</p>
+                    <p>Dansk</p>
+                    <p>Deutsch</p>
+                    <p>Hindi</p>
+                    <p>Español</p>
+                    <p>Français</p>
+                    <p>Italiano</p>
+                    <p>Mystery and thrillers</p>
+                    <p>Romance</p>
+                    <p>Science fiction</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <i id="icon" class="fa-solid fa-user"></i>
+                <div class="dropdown-content5">
+                    <p>Sign in</p>
+                    <p>Help</p>
+                    <p>Watch Anywhere</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bb23ea113c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
